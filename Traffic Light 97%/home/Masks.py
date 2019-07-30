@@ -1,9 +1,5 @@
 import numpy as np
-import matplotlib.pyplot as plt
 import cv2
-
-import helpers
-import test_functions
 
 def saturation(rgb_image):
     hsv = cv2.cvtColor(rgb_image, cv2.COLOR_RGB2HSV)
@@ -20,13 +16,13 @@ def saturation(rgb_image):
     masked_image = np.copy(rgb_image)
     masked_image[mask == 0] = 0
 
-    #f, (ax1, ax2) = plt.subplots(1, 2, figsize = (10, 5))
+    ###f, (ax1, ax2) = plt.subplots(1, 2, figsize = (10, 5))
 
-    #ax1.set_title('Saturation sum over rows')
-    #ax1.plot(np.sum(s, axis=1))
+    ###ax1.set_title('Saturation sum over rows')
+    ###ax1.plot(np.sum(s, axis=1))
 
-    #ax2.set_title('Masked image')
-    #ax2.imshow(masked_image)
+    ###ax2.set_title('Masked image')
+    ###ax2.imshow(masked_image)
     return masked_image
 
 def brightness(rgb_image):
@@ -48,14 +44,14 @@ def brightness(rgb_image):
     masked_image = np.copy(image)
     masked_image[mask1 == 0] = 0 #assigns maximum darkness to sections outside the brightest section
 
-    #vSUM = np.sum(masked_image, axis = 1)
-    #f, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 5))
+    ###vSUM = np.sum(masked_image, axis = 1)
+    ###f, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 5))
 
-    #ax1.set_title('Value sum over rows')
-    #ax1.plot(vSUM)
+    ###ax1.set_title('Value sum over rows')
+    ###ax1.plot(vSUM)
 
-    #ax2.set_title('Masked image')
-    #ax2.imshow(masked_image)
+    ###ax2.set_title('Masked image')
+    ###ax2.imshow(masked_image)
 
     return masked_image
 
@@ -71,7 +67,7 @@ def red(rgb_image):
     masked_image = np.copy(image)
     masked_image[mask==0] = 0
 
-    #plt.imshow(masked_image)
+    ###plt.imshow(masked_image)
 
     count = 0
 
@@ -96,7 +92,7 @@ def yellow(rgb_image):
     masked_image = np.copy(image)
     masked_image[mask==0] = 0
 
-    #plt.imshow(masked_image)
+    ###plt.imshow(masked_image)
 
     count = 0
 
@@ -120,7 +116,7 @@ def green(rgb_image):
     masked_image = np.copy(image)
     masked_image[mask==0] = 0
 
-    #plt.imshow(masked_image)
+    ###plt.imshow(masked_image)
 
     count = 0
 
