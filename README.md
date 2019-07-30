@@ -13,6 +13,7 @@ This program pre-processes the images, extracts features that will help distingu
 
 **4. Classification and visualizing the error.** Finally, I wrote the function that integrates image pre-processing, feature extraction and visualization to classify any traffic light. It takes an image as an input and outputs a label, and determines the model's accuracy.
 
+---------
 
 #1. Prerequisites.
 
