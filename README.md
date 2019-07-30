@@ -12,3 +12,21 @@ This program pre-processes the images, extracts features that will help distingu
 **3. Feature extraction.** Thirdly, I applied some filters and masks to extract the features from the images that will help to classify them into the three categories.
 
 **4. Classification and visualizing the error.** Finally, I wrote the function that integrates image pre-processing, feature extraction and visualization to classify any traffic light. It takes an image as an input and outputs a label, and determines the model's accuracy.
+
+
+#1. Prerequisites.
+
+- OpenCV
+- NumPy
+- MatPlotLib
+- IPython
+
+#2. Loading and visualizing the data.
+
+This traffic light dataset consists of 1484 number of color images in 3 categories - red, yellow, and green. As with most human-sourced data, the data is not evenly distributed among the types. There are:
+
+* 904 red traffic light images
+* 536 green traffic light images
+* 44 yellow traffic light images
+
+Note: All images come from this [MIT self-driving car course](https://selfdrivingcars.mit.edu/) and are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
