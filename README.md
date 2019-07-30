@@ -15,14 +15,14 @@ This program pre-processes the images, extracts features that will help distingu
 
 ---------
 
-#1. Prerequisites.
+# 1. Prerequisites.
 
 - OpenCV
 - NumPy
 - MatPlotLib
 - IPython
 
-#2. Loading and visualizing the data.
+# 2. Loading and visualizing the data.
 
 This traffic light dataset consists of 1484 number of color images in 3 categories - red, yellow, and green. As with most human-sourced data, the data is not evenly distributed among the types. There are:
 
