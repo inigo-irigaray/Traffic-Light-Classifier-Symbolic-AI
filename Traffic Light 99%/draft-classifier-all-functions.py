@@ -153,7 +153,7 @@ def red(rgb_image):
     image = brightness(rgb_image)
     hsv = cv2.cvtColor(image, cv2.COLOR_RGB2HSV)
 
-    lower_bound = np.array([107, 0, 0])
+    lower_bound = np.array([120, 0, 0])
     upper_bound = np.array([180, 255, 255])
 
     mask = cv2.inRange(hsv, lower_bound, upper_bound)
