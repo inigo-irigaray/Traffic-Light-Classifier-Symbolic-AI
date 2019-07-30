@@ -300,7 +300,7 @@ print("Number of misclassified images = " + str(len(MISCLASSIFIED)) +' out of '+
 ## Visualize misclassified example(s)
 #Display an image in the `MISCLASSIFIED` list
 #Print out its predicted label - to see what the image *was* incorrectly classified as
-display_image(MISCLASSIFIED[6])
+display_image(MISCLASSIFIED[0])
 
 
 if(len(MISCLASSIFIED) > 0):
