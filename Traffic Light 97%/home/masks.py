@@ -1,6 +1,7 @@
 import numpy as np
 import cv2
 
+#This function applies a saturation mas to the image
 def saturation(rgb_image):
     hsv = cv2.cvtColor(rgb_image, cv2.COLOR_RGB2HSV)
 
@@ -25,6 +26,7 @@ def saturation(rgb_image):
     ###ax2.imshow(masked_image)
     return masked_image
 
+#This function applies a brightness mask to the image
 def brightness(rgb_image):
     image = saturation(rgb_image)
 
@@ -55,6 +57,7 @@ def brightness(rgb_image):
 
     return masked_image
 
+#This function counts red pixels
 def red(rgb_image):
     image = brightness(rgb_image)
     hsv = cv2.cvtColor(image, cv2.COLOR_RGB2HSV)
@@ -80,6 +83,7 @@ def red(rgb_image):
 
     return count
 
+#This function counts yellow pixels
 def yellow(rgb_image):
     image = brightness(rgb_image)
     hsv = cv2.cvtColor(image, cv2.COLOR_RGB2HSV)
@@ -104,6 +108,7 @@ def yellow(rgb_image):
                     count += 1
     return count
 
+#This function counts green pixels
 def green(rgb_image):
     image = brightness(rgb_image)
     hsv = cv2.cvtColor(image, cv2.COLOR_RGB2HSV)
