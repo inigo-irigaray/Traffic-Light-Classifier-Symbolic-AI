@@ -30,9 +30,6 @@ This traffic light dataset consists of 1484 number of color images in 3 categori
 * 536 green traffic light images
 * 44 yellow traffic light images
 
-Note: All images come from this [MIT self-driving car course](https://selfdrivingcars.mit.edu/) and are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
-<p float="left">
-
 <img src="https://github.com/inigo-irigaray/Traffic-Light-Classifier-Symbolic-AI/blob/master/Traffic-Light-99%25/images/Green-Light.png" height = 300 width=250><img src="https://github.com/inigo-irigaray/Traffic-Light-Classifier-Symbolic-AI/blob/master/Traffic-Light-99%25/images/Red-Light.png" height = 300 width=250><img src="https://github.com/inigo-irigaray/Traffic-Light-Classifier-Symbolic-AI/blob/master/Traffic-Light-99%25/images/Yellow-Light.png" height = 300 width=270>
 
 </p>
@@ -65,3 +62,16 @@ Finally, I created three color spacing functions to count the number of red, yel
    <p align="center"> <img src="https://github.com/inigo-irigaray/Traffic-Light-Classifier-Symbolic-AI/blob/master/Traffic-Light-99%25/images/red-misclass-green.png" height = 300 width=250 > <p/>
 
    - In the second one, I adjusted the red lower bound to 107, to increase the red spectrum and ensure a higher count of pixels in the image. **My accuracy decreases to ~97%**, but I eliminated the unwanted red as green misclassification.
+
+# 5. Classification and visualizing the error.
+
+The final step in the project includes a function to get the estimated labels after sending the image through the feature-extraction pipeline, as well as a function to identify the misclassifications to calculate the accuracy of the model and test whether there is an unsafe misclassification.
+
+# 6. How to use?
+
+For use, the repository should be cloned or downloaded. Running the main-classifier.py on the Terminal processes the image dataset given. To use the algorithms on other images the user must make a minor change in main-classifier.py in the variable that keeps the directory of the files to be classified. And then, the program should run smoothly and deliver the expected results.
+
+# 7. License.
+
+All images come from this [MIT self-driving car course](https://selfdrivingcars.mit.edu/) and are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
+<p float="left">
