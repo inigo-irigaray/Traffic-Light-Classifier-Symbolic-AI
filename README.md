@@ -37,3 +37,18 @@ Note: All images come from this [MIT self-driving car course](https://selfdrivin
   
 </p>
 
+# 3. Pre-processing.
+
+For classification tasks like this one we need to create features by performing the same analysis on different pictures. It is, therefore, important that similar images create similar features. And to facilitate this, we will standardize the input and output to understand what results we can expect from running the program.
+
+First, I created a function that takes an image and resizes it to 32x32. Square images can be rotated and analyzed in smaller square patches. Additionally, if all images are the same size we can confidently pass them through the same pipeline.
+
+Secondly, it is customary to convert categorical labels like 'red' to numerical values. I created a function that one-hot encodes the labels into a 1D list of zeros with a number one representing the categorical value in the following way:
+  - red     =   [1,0,0]
+  - yellow  =   [0,1,0]
+  - green   =   [0,0,1]
+
+Finally, I created a function to standardize a list of images and pair each image to its one-hot encoded label.
+
+# 4. Feature extraction.
+
