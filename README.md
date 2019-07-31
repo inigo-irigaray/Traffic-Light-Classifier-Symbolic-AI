@@ -32,4 +32,4 @@ This traffic light dataset consists of 1484 number of color images in 3 categori
 
 Note: All images come from this [MIT self-driving car course](https://selfdrivingcars.mit.edu/) and are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
 
-<img src=\"/Users/inigoirigaray/Documents/GitHub/Traffic-Light-Classifier-Symbolic-AI/Traffic Light 99%/images/Green-Light.png\" width=\"50%\" height=\"50%\">
+<img src=\"Users/inigoirigaray/Documents/GitHub/Traffic-Light-Classifier-Symbolic-AI/Traffic Light 99%/images/Green-Light.png\" width=\"50%\" height=\"50%\">
