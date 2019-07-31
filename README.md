@@ -64,4 +64,4 @@ Finally, I created three color spacing functions to count the number of red, yel
 
    <p align="center"> <img src="https://github.com/inigo-irigaray/Traffic-Light-Classifier-Symbolic-AI/blob/master/Traffic-Light-99%25/images/red-misclass-green.png" height = 300 width=250 > <p/>
 
-   - In the second one, I adjusted the red lower to 107, to increase the red spectrum and ensure a higher count of pixels in the image. **My accuracy decreases to ~97%**, but I eliminated the unwanted red as green misclassification.
+   - In the second one, I adjusted the red lower bound to 107, to increase the red spectrum and ensure a higher count of pixels in the image. **My accuracy decreases to ~97%**, but I eliminated the unwanted red as green misclassification.
